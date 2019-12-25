@@ -1,0 +1,19 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Restricted
+{% endblock %}
+
+{% block body_block %}
+<h1>Hey!Happy for your login.Now you can see more.</h1>
+<ul>
+    <li><a href="{% url 'rango:index' %}">Index</a></li>
+    <li><a href="{% url 'registration_register' %}">Sign Up</a></li>
+    <li><a href="{% url 'rango:add_category' %}">Add New Category</a></li>
+    <li><a href="{% url 'auth_logout' %}">Logout</a></li>
+    <li><a href="{% url 'auth_login' %}">Login</a></li>
+    <li><a href="{% url 'rango:about' %}">About</a></li>
+</ul>
+{% endblock %}
+

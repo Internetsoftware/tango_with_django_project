@@ -1,0 +1,17 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+      About
+{% endblock %}
+
+{% block body_block %}
+<h1>About Page</h1>
+<strong>you have visit {{visits}} times.</strong>
+<img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango"/>
+<button class="btn btn-primary" id="about-btn">
+      Click me - I'm using JQuery!
+</button>
+<p>This is some text for the JQuery example.</p>
+<div id="msg">hello! I'm a further example for JQuery testing.</div>
+{% endblock %}
